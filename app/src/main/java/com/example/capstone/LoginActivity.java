@@ -19,8 +19,8 @@ public class LoginActivity extends AppCompatActivity {
     public void LoginClick(View v)
     {
         Intent goList = new Intent(LoginActivity.this, ChannellistActivity.class);
-        Toast.makeText(getApplicationContext(), editID.getText(), Toast.LENGTH_SHORT).show();
-        goList.putExtra("key", editID.getText());
+        //값보내기
+        //       goList.putExtra("key", editID.getText().toString());
         startActivity(goList);
     }
 }

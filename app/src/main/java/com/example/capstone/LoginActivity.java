@@ -4,9 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
     EditText editID, editPW;
@@ -20,7 +18,7 @@ public class LoginActivity extends AppCompatActivity {
     }
     public void LoginClick(View v)
     {
-        Intent goList = new Intent(LoginActivity.this, ChannellistActivity.class);
+        Intent goList = new Intent(LoginActivity.this, ChannelListActivity.class);
         //값보내기
         //       goList.putExtra("key", editID.getText().toString());
         startActivity(goList);

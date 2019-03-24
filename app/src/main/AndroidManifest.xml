@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ChannellistActivity"></activity>
+        <activity android:name=".JoinActivity"></activity>
     </application>
 
 </manifest>

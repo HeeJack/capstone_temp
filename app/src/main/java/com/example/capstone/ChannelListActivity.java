@@ -3,16 +3,13 @@ package com.example.capstone;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
-import android.support.v4.content.ContextCompat;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-public class ChannelListActivity extends AppCompatActivity {
+public class ChannelListActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,7 +39,7 @@ public class ChannelListActivity extends AppCompatActivity {
             public void onItemClick(AdapterView parent, View v, int position, long id) {
                 //이부분에 채널 목록을 클릭했을때 이벤트 작성하면됨    채널목록->회의대기 상태
                 // get item 해당 채널 데이터 받아오는 구문  수정 필요 일단 지우지망
-/*            ListViewItem item = (ListViewItem) parent.getItemAtPosition(position) ;
+  /*            ListViewItem item = (ListViewItem) parent.getItemAtPosition(position) ;
 
                 String titleStr = item.getTitle() ;
                 String descStr = item.getDesc() ;

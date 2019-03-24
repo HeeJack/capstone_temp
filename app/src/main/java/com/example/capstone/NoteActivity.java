@@ -19,7 +19,7 @@ public class NoteActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(NoteActivity.this,ChannellistActivity.class);
+                Intent intent=new Intent(NoteActivity.this,ChannelListActivity.class);
                 startActivity(intent);
             }
         });

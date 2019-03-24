@@ -4,6 +4,9 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
+import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 public class ChannelListActivity extends Activity {
@@ -30,12 +33,37 @@ public class ChannelListActivity extends Activity {
         // 첫 번째 아이템 추가.
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.main), ContextCompat.getDrawable(this, R.drawable.green),
                 "노터 마케팅 1팀", 6,"최유진 조영태 등등") ;
-        // 두 번째 아이템 추가.
 
-        // 세 번째 아이템 추가.
-        /*adapter.addItem(ContextCompat.getDrawable(this, R.drawable.ic_assignment_ind_black_36dp),
-                "Ind", "Assignment Ind Black 36dp") ;
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView parent, View v, int position, long id) {
+                //이부분에 채널 목록을 클릭했을때 이벤트 작성하면됨    채널목록->회의대기 상태
+                // get item 해당 채널 데이터 받아오는 구문  수정 필요 일단 지우지망
+  /*            ListViewItem item = (ListViewItem) parent.getItemAtPosition(position) ;
 
+                String titleStr = item.getTitle() ;
+                String descStr = item.getDesc() ;
+                Drawable iconDrawable = item.getIcon() ;
 */
+
+                //Log.d("debug", "dd");
+
+            }
+        });
+    }
+
+    public void MakeChannel(View v)
+    {
+        Intent goMake = new Intent(ChannelListActivity.this, MakeChannelActivity.class);
+        //값보내기
+        //       goList.putExtra("key", editID.getText().toString());
+        startActivity(goMake);
+    }
+    public void LastMeet(View v)
+    {
+        Intent goLast = new Intent(ChannelListActivity.this, LastMeetActivity.class);
+        //값보내기
+        //       goList.putExtra("key", editID.getText().toString());
+        startActivity(goLast);
     }
 }

@@ -7,9 +7,9 @@ public class ListViewItem {
 
     private Drawable iconDrawable ;
     private Drawable stateDrawable ;
-    private String title ;
+    private String titleStr ;
     private int peopleNum;
-    private String people ;
+    private String peopleStr ;
 
     public void setIcon(Drawable icon) {
         iconDrawable = icon ;
@@ -18,13 +18,13 @@ public class ListViewItem {
         stateDrawable = icon ;
     }
     public void setTitle(String title) {
-        title = title ;
+        titleStr = title ;
     }
     public void setPeopleNum(int num) {
         peopleNum = num;
     }
     public void setPeople(String people) {
-        people = people;
+        peopleStr = people;
     }
 
     public void modPeople(String people) {
@@ -38,13 +38,13 @@ public class ListViewItem {
         return this.stateDrawable ;
     }
     public String getTitle() {
-        return this.title ;
+        return this.titleStr ;
     }
     public int getPeopleNum() {
         return this.peopleNum;
     }
     public String getPeople() {
-        return this.people ;
+        return this.peopleStr ;
     }
 }
 

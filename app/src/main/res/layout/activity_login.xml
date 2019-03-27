@@ -14,7 +14,7 @@
         android:layout_weight="2" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/img_logo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -59,7 +59,7 @@
                 android:background="@drawable/coner_rectangle"
                 android:ems="10"
                 android:inputType="number"
-                android:text="Name" />
+                tools:background="@drawable/pw" />
         </LinearLayout>
 
     </LinearLayout>
@@ -76,8 +76,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:onClick="JoinusClick"
-            android:text="Join us" />
+            android:background="@drawable/join_us_s"
+            android:onClick="JoinusClick" />
 
     </LinearLayout>
 
@@ -92,8 +92,8 @@
             android:layout_height="wrap_content"
 
             android:layout_gravity="center"
-            android:onClick="LoginClick"
-            android:text="로그인" />
+            android:background="@drawable/login"
+            android:onClick="LoginClick" />
     </LinearLayout>
 
     <Space

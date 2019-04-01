@@ -14,7 +14,7 @@
         android:layout_weight="2" />
 
     <ImageView
-        android:id="@+id/img_logo"
+        android:id="@+id/img_hello"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"

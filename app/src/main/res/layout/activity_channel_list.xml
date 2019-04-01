@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/background">
@@ -9,22 +12,23 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="20dp"
-        android:background="@android:color/white"
+        android:background="@drawable/coner_rectangle"
         android:orientation="vertical">
 
         <LinearLayout
+            android:id="@+id/img_last_meeting"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="4"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            tools:background="@drawable/last_meeting">
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/text_last_meeting"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:paddingLeft="5dp"
-                android:text="Channel"
                 android:textSize="12pt" />
 
             <Space
@@ -40,12 +44,11 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button5"
+                    android:id="@+id/button_add"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:onClick="MakeChannel"
-                    android:text="생성" />
+                    android:onClick="MakeChannel" />
 
                 <Button
                     android:id="@+id/button6"

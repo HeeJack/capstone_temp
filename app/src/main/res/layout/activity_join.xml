@@ -32,11 +32,9 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
-            android:background="@android:color/transparent"
             android:ems="10"
-
             android:inputType="textPersonName"
-            tools:background="@drawable/join_name" />
+            android:background="@drawable/join_name" />
 
         <EditText
             android:id="@+id/edit_phon_num"
@@ -44,10 +42,9 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
-            android:background="@android:color/transparent"
             android:ems="10"
             android:inputType="textPersonName"
-            tools:background="@drawable/join_phone_number" />
+            android:background="@drawable/join_phone_number" />
 
         <EditText
             android:id="@+id/edit_id"
@@ -55,10 +52,9 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
-            android:background="@android:color/transparent"
             android:ems="10"
             android:inputType="textPersonName"
-            tools:background="@drawable/id" />
+            android:background="@drawable/id" />
 
         <EditText
             android:id="@+id/edit_pw"
@@ -66,10 +62,9 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
-            android:background="@android:color/transparent"
             android:ems="10"
             android:inputType="textPersonName"
-            tools:background="@drawable/pw" />
+            android:background="@drawable/pw" />
     </LinearLayout>
 
     <LinearLayout

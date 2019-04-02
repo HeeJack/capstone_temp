@@ -56,10 +56,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/coner_rectangle"
+                android:background="@drawable/pw"
                 android:ems="10"
                 android:inputType="number"
-                tools:background="@drawable/pw" />
+                />
         </LinearLayout>
 
     </LinearLayout>

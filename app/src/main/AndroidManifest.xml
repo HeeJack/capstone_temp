@@ -16,12 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ChannellistActivity"></activity>
+        <activity android:name=".ChannelListActivity"></activity>
         <activity android:name=".WaitingActivity"></activity>
         <activity android:name=".ConferenceActivity"></activity>
         <activity android:name=".NoteActivity"></activity>
         <activity android:name=".CloseActivity"></activity>
-        <activity android:name=".ChannelListActivity"></activity>
+
         <activity android:name=".JoinActivity"></activity>
         <activity android:name=".MakeChannelActivity"></activity>
         <activity android:name=".LastMeetActivity"></activity>

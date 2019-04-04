@@ -11,17 +11,14 @@
     <Space
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1.5" />
+        android:layout_weight="2" />
 
-    <TextView
-        android:id="@+id/textView"
+    <ImageView
+        android:id="@+id/img_hello"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1.5"
-        android:gravity="center"
-        android:text="hello"
-        android:textColor="@color/textcolor"
-        android:textSize="50dp" />
+        android:layout_weight="1"
+        app:srcCompat="@drawable/hello" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,25 +34,15 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/text_id"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:ems="1"
-                android:gravity="center"
-                android:text="ID" />
-
             <EditText
                 android:id="@+id/edit_id"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/coner_rectangle"
+                android:background="@drawable/id"
 
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:inputType="textPersonName" />
         </LinearLayout>
 
         <LinearLayout
@@ -64,24 +51,15 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/text_pw"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:ems="1"
-                android:gravity="center"
-                android:text="PW" />
-
             <EditText
                 android:id="@+id/edit_pw"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/coner_rectangle"
+                android:background="@drawable/pw"
                 android:ems="10"
                 android:inputType="number"
-                android:text="Name" />
+                />
         </LinearLayout>
 
     </LinearLayout>
@@ -98,8 +76,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:onClick="JoinusClick"
-            android:text="Join us" />
+            android:background="@drawable/join_us_s"
+            android:onClick="JoinusClick" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -113,8 +92,8 @@
             android:layout_height="wrap_content"
 
             android:layout_gravity="center"
-            android:onClick="LoginClick"
-            android:text="LOGIN" />
+            android:background="@drawable/login"
+            android:onClick="LoginClick" />
     </LinearLayout>
 
     <Space

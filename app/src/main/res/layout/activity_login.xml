@@ -114,7 +114,7 @@
 
             android:layout_gravity="center"
             android:onClick="LoginClick"
-            android:text="로그인" />
+            android:text="LOGIN" />
     </LinearLayout>
 
     <Space

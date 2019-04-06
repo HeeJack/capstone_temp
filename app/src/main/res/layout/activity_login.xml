@@ -4,14 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     android:orientation="vertical"
-    tools:context=".LoginActivity"
-    android:background="@color/background">
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context=".LoginActivity">
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="2" />
+        android:layout_weight="1.5" />
 
     <ImageView
         android:id="@+id/img_hello"
@@ -23,44 +25,43 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.4"
+        android:layout_weight="1"
         android:orientation="vertical"
         android:padding="10dp">
 
-        <LinearLayout
+        <Space
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="3dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
 
-            <EditText
-                android:id="@+id/edit_id"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/id"
+        <EditText
+            android:id="@+id/edit_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/id"
 
-                android:ems="10"
-                android:inputType="textPersonName" />
-        </LinearLayout>
+            android:ems="10"
+            android:inputType="textPersonName" />
 
-        <LinearLayout
+        <Space
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
 
-            <EditText
-                android:id="@+id/edit_pw"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/pw"
-                android:ems="10"
-                android:inputType="number"
-                />
-        </LinearLayout>
+        <EditText
+            android:id="@+id/edit_pw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/pw"
+            android:ems="10"
+            android:inputType="number" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
 
     </LinearLayout>
 
@@ -84,6 +85,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:orientation="vertical">
 
         <Button
@@ -96,8 +98,4 @@
             android:onClick="LoginClick" />
     </LinearLayout>
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1.5" />
 </LinearLayout>

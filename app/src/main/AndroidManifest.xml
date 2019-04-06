@@ -24,7 +24,6 @@
 
         <activity android:name=".JoinActivity"></activity>
         <activity android:name=".MakeChannelActivity"></activity>
-        <activity android:name=".LastMeetActivity"></activity>
     </application>
 
 </manifest>

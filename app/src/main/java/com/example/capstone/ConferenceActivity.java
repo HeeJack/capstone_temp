@@ -13,7 +13,7 @@ public class ConferenceActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_conference);
-        Button btn=(Button)findViewById(R.id.button3);
+        /*
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -21,6 +21,6 @@ public class ConferenceActivity extends AppCompatActivity {
                 Intent intent=new Intent(ConferenceActivity.this,CloseActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
     }
 }

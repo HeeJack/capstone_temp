@@ -60,18 +60,10 @@ public class ChannelListActivity extends AppCompatActivity {
         startActivity(goWaiting);
     }
 
-    public void MakeChannel(View v)
-    {
+    public void MakeChannel(View v) {
         Intent goMake = new Intent(ChannelListActivity.this, MakeChannelActivity.class);
         //값보내기
         //       goList.putExtra("key", editID.getText().toString());
         startActivity(goMake);
-    }
-    public void LastMeet(View v)
-    {
-        Intent goLast = new Intent(ChannelListActivity.this, LastMeetActivity.class);
-        //값보내기
-        //       goList.putExtra("key", editID.getText().toString());
-        startActivity(goLast);
     }
 }

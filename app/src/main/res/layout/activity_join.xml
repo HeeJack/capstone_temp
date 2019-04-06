@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     android:orientation="vertical"
-    android:background="@color/background">
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
 
     <Space
         android:layout_width="match_parent"
@@ -26,45 +28,66 @@
         android:orientation="vertical"
         android:padding="10dp">
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+
         <EditText
             android:id="@+id/edit__name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_weight="1"
+            android:layout_weight="0.5"
+            android:background="@drawable/join_name"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:background="@drawable/join_name" />
+            android:inputType="textPersonName" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
 
         <EditText
             android:id="@+id/edit_phon_num"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_weight="1"
+            android:layout_weight="0.5"
+            android:background="@drawable/join_phone_number"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:background="@drawable/join_phone_number" />
+            android:inputType="textPersonName" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
 
         <EditText
             android:id="@+id/edit_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_weight="1"
+            android:layout_weight="0.5"
+            android:background="@drawable/id"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:background="@drawable/id" />
+            android:inputType="textPersonName" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
 
         <EditText
             android:id="@+id/edit_pw"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_weight="1"
+            android:layout_weight="0.5"
+            android:background="@drawable/pw"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:background="@drawable/pw" />
+            android:inputType="textPersonName" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
     </LinearLayout>
 
     <LinearLayout

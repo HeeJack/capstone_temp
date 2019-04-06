@@ -13,6 +13,10 @@ public class ConferenceActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_conference);
+        //이전 액티비티 종료
+        WaitingActivity waitingActivity = (WaitingActivity)WaitingActivity.activity;
+        waitingActivity.finish();
+
         /*
 
         btn.setOnClickListener(new View.OnClickListener() {
@@ -22,5 +26,10 @@ public class ConferenceActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });*/
+    }
+
+    @Override
+    public void onBackPressed() {
+//        super.onBackPressed();
     }
 }

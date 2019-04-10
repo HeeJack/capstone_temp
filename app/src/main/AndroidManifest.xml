@@ -21,10 +21,9 @@
         <activity android:name=".ConferenceActivity"></activity>
         <activity android:name=".NoteActivity"></activity>
         <activity android:name=".CloseActivity"></activity>
-
         <activity android:name=".JoinActivity"></activity>
         <activity android:name=".MakeChannelActivity"></activity>
         <activity android:name=".LastMeetActivity"></activity>
     </application>
-
+    <uses-permission android:name="android.permission.INTERNET"/>
 </manifest>
